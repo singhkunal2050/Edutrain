@@ -1,11 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Amita);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Chettan+2);
+
+*{
+    /* font-family: 'Amita', cursive; */
+    font-family: 'Baloo Chettan 2', cursive;
+
+}
+
+
 header{
     border: indianred 2px solid;
     display: inline-flex;
     width: 100%;
+    background: coral;
 }
 
 header #header-img{
     height: 100px;
+
 }
 
 header #nav-bar{
@@ -16,7 +28,26 @@ header #nav-bar{
 .nav-link{
     padding: 20px;
     border: 2px sienna solid;
+    border-radius: 4px;
     margin:auto 30px;
+    background: blanchedalmond;
+
+}
+
+.nav-link:hover{
+    background-color: rgb(255, 91, 31);
+    transition: .4s ease;
+
+}
+
+.nav-link a:hover{
+    color: #252525;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
 }
 
 
@@ -26,9 +57,47 @@ h2{
 }
 
 
+/* newsletter */
+
+
+#newsletter{
+    padding: 10px;
+    border: 2px saddlebrown solid;
+}
+
+#form{
+    border: solid 2px springgreen;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#form *{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* video /courses */
+
+#courses{
+    width: 100%;
+    border: teal 2px solid;
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    margin:20px auto
+}
+
+/* .product */
+
+
 #products{
     display: flex;
     justify-content: space-around;
+    border: 2px solid slateblue;
 }
 
 
@@ -40,14 +109,25 @@ h2{
     
 }
 
+.product p{
+    font-family: 'Amita', cursive;
+
+}
 
 
+@media(max-width:900px){
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link ,a{
+        padding: 0;
+        margin:0;
+    }
 
 
-
-
-
-
+}
 
 @media(max-width:750px){
     body{
