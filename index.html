@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>EduTrain</title>
 </head>
 <body>
-    
+    <header id="header"> 
+        <img src="img/logo.png" alt="logo" id="header-img">
+        <!-- stays at top -->
+        <nav id="nav-bar"> 
+                <span class="nav-link"><a href="#courses"">Courses</a></span>
+                <span class="nav-link"><a href="#products">Products</a></span>
+                <span class="nav-link"><a href="#contact">Contact US</a></span>
+        </nav>
+    </header>
+
+    <main>
+        <section id="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form" method="post">
+                <input type="email" required placeholder="abc@xyz.com" name="email" id="email">
+                <input type="submit" id="submit" value="Subscribe">
+            </form>
+        </section>
+
+        <section id="courses">
+          <iframe id = "video" width="677" height="381" src="https://www.youtube.com/embed/Z0A6RdNhhYU" frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <h2>Our Popular Products</h2>
+        <section id="products">
+            <div class="product">
+                <h2>C++ Game Dev</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iure at exercitationem! Corporis architecto ut animi beatae dignissimos perspiciatis optio!</p>
+            </div>
+            <div class="product">
+                <h2>Java Web App</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iure at exercitationem! Corporis architecto ut animi beatae dignissimos perspiciatis optio!</p>
+            </div>
+            <div class="product">
+                <h2>Web Snake Game</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iure at exercitationem! Corporis architecto ut animi beatae dignissimos perspiciatis optio!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+
+            
+        </section>
+    </main>
+
+
 </body>
 </html>
